@@ -1,5 +1,13 @@
+import EventList from "@/components/landing/EventList";
+import Header from "@/components/landing/Header";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <section className='container'>
+      <Header />
+      <EventList />
+    </section>
+  );
 };
 
 export default HomePage;
