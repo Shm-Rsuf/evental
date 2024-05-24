@@ -13,8 +13,15 @@ const Navbar = () => {
         </div>
 
         <ul className='flex gap-4 text-[#9C9C9C]'>
-          <Link href='/about'>About</Link>
-          <li href='/contact'>Contact Us</li>
+          <li>
+            <Link href='/login'>Login</Link>
+          </li>
+          <li>
+            <Link href='/about'>About</Link>
+          </li>
+          <li>
+            <Link href='/contact'>Contact Us</Link>
+          </li>
         </ul>
       </div>
     </nav>
