@@ -14,7 +14,7 @@ export default async function RootLayout({ children }) {
   await dbConnect();
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Navbar />
         <main className='py-8'>{children}</main>
       </body>
