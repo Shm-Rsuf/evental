@@ -8,7 +8,6 @@ const LoginForm = () => {
 
   const handleSubmit = async (evt) => {
     evt.preventDefault();
-
     try {
       const formData = new FormData(evt.currentTarget);
       await perfromLogin(formData);
