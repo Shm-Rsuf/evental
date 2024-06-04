@@ -3,6 +3,17 @@ import EventVenue from "@/components/details/EventVenue";
 import HeroSection from "@/components/details/HeroSection";
 import { getSingleEvent } from "@/db/queries";
 
+export async function generateMetadata({ params: { id } }) {
+  const eventInfo = await getSingleEvent(id);
+  return {
+    title: `Evental | ${eventInfo?.name}`,
+    description: eventInfo?.details,
+    openGraph: {
+      images: [eventInfo?.imageUrl],
+    },
+  };
+}
+
 const DetailsPage = async ({ params: { id } }) => {
   const eventInfo = await getSingleEvent(id);
   return (
