@@ -1,11 +1,4 @@
-"use client";
-
-import { useSearchParams } from "next/navigation";
-
 const Search = () => {
-  const searchParams = useSearchParams();
-  console.log(searchParams);
-
   return (
     <div>
       <input
