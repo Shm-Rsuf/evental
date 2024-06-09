@@ -1,7 +1,8 @@
 import Image from "next/image";
 import ActionsButtons from "../ActionsButtons";
 
-const HeroSection = ({ eventInfo }) => {
+const HeroSection = async ({ eventInfo }) => {
+  // const { base64 } = await getBlurImageData(eventInfo?.imageUrl);
   return (
     <section className='container'>
       <div className='bg-gradient-to-b from-slate-200/20 to-slate-800/30'>
